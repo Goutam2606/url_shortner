@@ -1,0 +1,218 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 80px 30px;
+    border: 2px solid black;
+    height: 100%;
+}
+
+.container .heading {
+}
+
+div.form {
+    padding: 60px 60px;
+    border-radius: 10px;
+    width: 700px;
+    box-shadow: 1px 1px 5px gray;
+
+}
+
+div.form form input {
+    padding: 5px 30px;
+    width: 80%;
+    font-size: 20px;
+
+}
+
+div.form form button {
+    border: 0;
+    outline: none;
+    background-color: #2a9d8f;
+    padding: 10px 24px;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+.link-box {
+    display: flex;
+    flex-wrap: wrap;
+    background: #e9c46a;
+    padding: 20px;
+    margin: 4px;
+}
+
+.link-box .full,
+.link-box .short {
+    width: 40%;
+}
+
+.link-box div a {
+    color: #264653;
+}
+
+.clicks {
+    height: 20px;
+    width: 20px;
+    background: #2a9d8f;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.delete span {
+    color: #d11a2a;
+    font-size: 24px;
+} */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(1, 134, 238);
+}
+
+.form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form input[type="url"] {
+    padding: 20px;
+    font-size: 1.2rem;
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: gray;
+}
+
+div.form form button {
+    border: 0;
+    outline: none;
+    background-color: hsl(215, 58%, 39%);
+    padding: 20px 35px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+
+form button:hover {
+    background-color: #6d7d8f;
+}
+
+.link-box {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+
+.link-box div {
+    flex: 1;
+    text-align: center;
+}
+
+.link-box a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link-box a:hover {
+    text-decoration: underline;
+}
+
+.delete span {
+    color: #d11a2a;
+    font-size: 24px;
+}
+
+
+@media (max-width: 768px) {
+    .link-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form input[type="url"] {
+        width: 90%;
+    }
+
+    form button {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    form input[type="url"] {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    form button {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .link-box {
+        padding: 8px;
+    }
+
+    .link-box h2 {
+        font-size: 1rem;
+    }
+
+    .link-box span,
+    .link-box a {
+        font-size: 0.9rem;
+    }
+
+    .link-box div {
+        margin-bottom: 10px;
+    }
+}
